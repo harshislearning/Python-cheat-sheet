@@ -32,6 +32,7 @@ df['total'] = df['price'] * df['quantity']
 #9. Handle duplicates 
 df.drop_duplicates()           #remove duplicates
 
-
+#10. Export data
+df.to_csv('output.csv',index=False)
 
 
