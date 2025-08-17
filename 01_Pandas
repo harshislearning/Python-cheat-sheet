@@ -20,6 +20,18 @@ df[['name','age']]      #select columns
 df.groupby('category').mean()       #group by category
 df.groupby('city').agg({'sales':'sum','profit':'mean'})
 
+#6. merge Dataframes 
+pd.merge(df1, df2, on='id')       
+
+#7. Sort Data
+df.sort_values('age',ascending= False )      #Sort by age
+
+#8. Create new columns 
+df['total'] = df['price'] * df['quantity']
+
+#9. Handle duplicates 
+df.drop_duplicates()           #remove duplicates
+
 
 
 
