@@ -1,1 +1,18 @@
+import pandas as pd
+
+#1. read data
+df = pd.read_csv('file.csv')
+
+#2. explore data 
+df.head(10)  #first 10 rows
+df.head()  
+df.info()    #Data types & memory usage
+
+#3. Handle missing data 
+df.fillna(0)   #Fill with 0
+df.dropna()    #drop null rows
+
+#4. Filter & Select 
+
+
 
