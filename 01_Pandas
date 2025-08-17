@@ -13,6 +13,13 @@ df.fillna(0)   #Fill with 0
 df.dropna()    #drop null rows
 
 #4. Filter & Select 
+df[df['age']>25]        #filter rows
+df[['name','age']]      #select columns
+
+#5. Group & aggregate
+df.groupby('category').mean()       #group by category
+df.groupby('city').agg({'sales':'sum','profit':'mean'})
+
 
 
 
